@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>บทเรียนออนไลน์ พละศึกษา เรื่อง ฟุตบอล</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="ball">⚽</div>
+  <p class="tag">รายวิชาพละศึกษา</p>
+  <h1>บทเรียนออนไลน์<br>เรื่อง ฟุตบอล</h1>
+  <p>เรียนรู้พื้นฐานฟุตบอล แบบทดสอบ และรับเกียรติบัตรเมื่อผ่านเกณฑ์</p>
+  <a href="#lesson" class="btn">เริ่มเรียน</a>
+</header>
+
+<nav>
+  <a href="#lesson">บทเรียน</a>
+  <a href="#quiz">แบบทดสอบ</a>
+  <a href="#certificate">เกียรติบัตร</a>
+  <a href="#members">สมาชิก</a>
+</nav>
+
+<main>
+<section id="lesson" class="section">
+  <h2>📚 บทเรียนฟุตบอล</h2>
+  <div class="cards">
+    <article><h3>⚽ ฟุตบอลคืออะไร?</h3><p>กีฬาประเภททีมที่ผู้เล่นใช้เท้าและส่วนอื่นของร่างกายตามกติกา เพื่อทำประตูให้ได้มากกว่าคู่แข่ง</p></article>
+    <article><h3>🎯 ทักษะพื้นฐาน</h3><p>การส่งบอล การเลี้ยงบอล การยิงประตู การควบคุมบอล และการเคลื่อนที่ในสนาม</p></article>
+    <article><h3>📋 กติกาเบื้องต้น</h3><p>การแข่งขันทั่วไปมีผู้เล่น 11 คนต่อทีม และมีผู้ตัดสินควบคุมการแข่งขันตามกติกา</p></article>
+    <article><h3>🤝 น้ำใจนักกีฬา</h3><p>เคารพคู่แข่งขัน ปฏิบัติตามกติกา รู้แพ้รู้ชนะ และเล่นอย่างปลอดภัย</p></article>
+  </div>
+</section>
+
+<section id="quiz" class="section quiz">
+  <h2>📝 แบบทดสอบ</h2>
+  <p>ตอบคำถามทั้ง 5 ข้อ แล้วกดส่งคำตอบ</p>
+  <form id="quizForm"></form>
+  <button class="btn" onclick="checkQuiz()">ส่งคำตอบ</button>
+  <div id="result" class="result"></div>
+</section>
+
+<section id="certificate" class="section certificate">
+  <h2>🏆 เกียรติบัตรอิเล็กทรอนิกส์</h2>
+  <p>ผ่านเกณฑ์ตั้งแต่ 80% ขึ้นไป จึงสามารถสร้างเกียรติบัตรได้</p>
+  <input id="studentName" placeholder="กรอกชื่อ-นามสกุล">
+  <button class="btn" onclick="makeCertificate()">สร้างเกียรติบัตร</button>
+  <div id="certBox"></div>
+</section>
+
+<section id="members" class="section">
+  <h2>👥 สมาชิกกลุ่ม</h2>
+  <ul class="members">
+    <li>มูฮำมัดฮากิม มะโระ — เลขที่ 24 — ม.5/1</li>
+    <li>มูฮำหมัดมาลีกี อาแซ — เลขที่ 5 — ม.5/1</li>
+    <li>นายฟูรกอน มือลี — เลขที่ 15 — ม.5/1</li>
+    <li>มูฮัมหมัดฮากีมี หามะ — เลขที่ 16 — ม.5/1</li>
+  </ul>
+</section>
+</main>
+
+<footer>พัฒนาเพื่อการเรียนรู้ | HTML + CSS + JavaScript | รายวิชาพละศึกษา เรื่อง ฟุตบอล</footer>
+<script src="script.js"></script>
+</body>
+</html>
